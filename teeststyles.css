@@ -1,0 +1,41 @@
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    height: 10vh;
+    width: 10%;
+    overflow: hidden;
+}
+/* Slideshow Background */
+.slideshow-container ::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 15s infinite;
+}
+/* Overlay Content */
+.slideshow-overlay{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+/* Keyframes for Slideshow Animation */
+@keyframes slideshow {
+    0% {
+        background-image: url('23shops.jpg');
+    }
+    50% {
+        background-image: url('22shops.jpg');
+    }
+    100% {
+        background-image: url('24shops.jpg');
+    }
+} 

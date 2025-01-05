@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    body{font-size: 14px;}
+    .container{width: 90%;padding: 10px;}
+    .header{font-size: 24px;}
+    .navigation{display: block;}
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+section {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.text{
+    width: 200px;
+    height: 30px;
+    border-color: blue;
+    border-radius: 5px;
+}
+.email{
+    width: 200px;
+    height: 30px;
+    border-color: blue;
+    border-radius: 5px;
+}
+.Message{
+    width: 415px;
+    height: 70px;
+    border-color: blue;
+    border-radius: 5px;
+    border-style: solid;
+}
+.send{
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: blue;
+    background-color: blue;
+}
+.hero{
+    background-image: linear-gradient(to right,red,yellow,blue,green);
+}
